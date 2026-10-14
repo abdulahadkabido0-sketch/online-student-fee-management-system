@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Record Student Fee</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Student Fee Management System</h1>
+
+    <p>Liyu College Campus</p>
+
+</header>
+
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h2>Student Fee Payment</h2>
+
+
+        <form action="process.php" method="POST">
+
+
+            <label>Student Name</label>
+
+            <input
+                type="text"
+                name="student_name"
+                required
+            >
+
+
+            <label>Student ID</label>
+
+            <input
+                type="text"
+                name="student_id"
+                required
+            >
+
+
+            <label>Department</label>
+
+            <input
+                type="text"
+                name="department"
+                required
+            >
+
+
+            <label>Level</label>
+
+            <select name="level" required>
+
+                <option value="">
+                    Select Level
+                </option>
+
+                <option value="100 Level">
+                    100 Level
+                </option>
+
+                <option value="200 Level">
+                    200 Level
+                </option>
+
+                <option value="300 Level">
+                    300 Level
+                </option>
+
+                <option value="400 Level">
+                    400 Level
+                </option>
+
+                <option value="500 Level">
+                    500 Level
+                </option>
+
+            </select>
+
+
+            <label>Fee Type</label>
+
+            <select name="fee_type" required>
+
+                <option value="">
+                    Select Fee Type
+                </option>
+
+                <option value="School Fees">
+                    School Fees
+                </option>
+
+                <option value="Registration Fee">
+                    Registration Fee
+                </option>
+
+                <option value="Library Fee">
+                    Library Fee
+                </option>
+
+                <option value="Other Fees">
+                    Other Fees
+                </option>
+
+            </select>
+
+
+            <label>Amount (₦)</label>
+
+            <input
+                type="number"
+                name="amount"
+                min="1"
+                step="0.01"
+                required
+            >
+
+
+            <label>Payment Date</label>
+
+            <input
+                type="date"
+                name="payment_date"
+                required
+            >
+
+
+            <button type="submit">
+                Save Payment
+            </button>
+
+        </form>
+
+
+        <a href="index.html" class="back">
+            ← Back to Home
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
